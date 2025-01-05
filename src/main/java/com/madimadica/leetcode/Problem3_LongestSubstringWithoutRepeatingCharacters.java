@@ -2,7 +2,20 @@ package com.madimadica.leetcode;
 
 import java.util.BitSet;
 
+/**
+ * <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/description/">3. Longest Substring Without Repeating Characters</a>
+ * <p>
+ *     Medium
+ * </p>
+ * <p>
+ *     3 ms - Beats 90.07%
+ * </p>
+ * <p>
+ *     This solution uses a bitmask of codepoints to represent the seen characters within a sliding window.
+ * </p>
+ */
 public class Problem3_LongestSubstringWithoutRepeatingCharacters {
+
     /**
      * Given a string s, find the length of the longest
      * substring without repeating characters.
