@@ -22,28 +22,26 @@ public class Problem21_MergeTwoSortedLists {
      */
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummyHead = new ListNode();
-        ListNode currentAnswer = dummyHead;
+        ListNode tail = dummyHead;
 
         ListNode current1 = list1;
         ListNode current2 = list2;
 
         while (current1 != null && current2 != null) {
-            ListNode node;
             if (current1.val < current2.val) {
-                node = current1;
+                tail.next = current1;
                 current1 = current1.next;
             } else {
-                node = current2;
+                tail.next = current2;
                 current2 = current2.next;
             }
-            currentAnswer.next = node;
-            currentAnswer = currentAnswer.next;
+            tail = tail.next;
         }
         if (current1 != null) {
-            currentAnswer.next = current1;
+            tail.next = current1;
         }
         if (current2 != null) {
-            currentAnswer.next = current2;
+            tail.next = current2;
         }
         return dummyHead.next;
     }
