@@ -7,6 +7,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * <a href="https://leetcode.com/problems/merge-k-sorted-lists/">23. Merge k Sorted Lists</a>
+ * <p>
+ *     Hard
+ * </p>
+ * <p>
+ *    4 ms - Beats 70.95%
+ * </p>
+ */
 public class Problem23_MergeKSortedLists {
 
     public ListNode mergeKLists(ListNode[] listsArray) {
@@ -31,6 +40,9 @@ public class Problem23_MergeKSortedLists {
         return lists.get(0);
     }
 
+    /**
+     * @see Problem21_MergeTwoSortedLists
+     */
     private ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummyHead = new ListNode();
         ListNode tail = dummyHead;
