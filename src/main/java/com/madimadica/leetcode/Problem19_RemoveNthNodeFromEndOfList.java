@@ -1,5 +1,7 @@
 package com.madimadica.leetcode;
 
+import com.madimadica.leetcode.api.ListNode;
+
 /**
  * <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">19. Remove Nth Node From End of List</a>
  * <p>
@@ -29,15 +31,6 @@ public class Problem19_RemoveNthNodeFromEndOfList {
         ListNode target = lag.next;
         lag.next = target == null ? null : target.next;
         return head;
-    }
-
-    // Definition for singly-linked list.
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 
 }

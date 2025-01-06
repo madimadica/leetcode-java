@@ -1,5 +1,7 @@
 package com.madimadica.leetcode;
 
+import com.madimadica.leetcode.api.ListNode;
+
 /**
  * <a href="https://leetcode.com/problems/add-two-numbers/description/">2. Add Two Numbers</a>
  * <p>
@@ -68,14 +70,4 @@ public class Problem2_AddTwoNumbers {
         return sumHead;
     }
 
-    /**
-     * Definition for singly-linked list.
-     */
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
 }
