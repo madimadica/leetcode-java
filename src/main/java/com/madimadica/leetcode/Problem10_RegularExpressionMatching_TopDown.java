@@ -9,7 +9,7 @@ package com.madimadica.leetcode;
  *    1 ms - Beats 100.00%
  * </p>
  */
-public class Problem10_RegularExpressionMatching {
+public class Problem10_RegularExpressionMatching_TopDown {
 
     private final Boolean[][] MEMO = new Boolean[21][21];
     private String str;
